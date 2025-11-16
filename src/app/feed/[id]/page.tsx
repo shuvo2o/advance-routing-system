@@ -1,16 +1,9 @@
-import React from 'react'
-type Props = {
-    params:Promise<{
-        id: string;
-    }>
-}
-const FeedDetails = async({params}) => {
-    const {id} = await params;
-  return (
-    <div>
-      Feed Details: {id}
-    </div>
-  )
-}
+import React from "react";
 
-export default FeedDetails
+const FeedDetails = async ({ params }: { params: { id: string } }) => {
+  const { id } = params;
+
+  return <div>Feed Details: {id}</div>;
+};
+
+export default FeedDetails;
