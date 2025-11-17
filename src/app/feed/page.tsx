@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Feedpage = async() => {
+const Feedpage = async () => {
   return (
-    await new Promise(resolve => setTimeout(resolve, 1000)),
+    await new Promise(resolve => setTimeout(resolve, 1000
+    )),
     <div>
-     News Feed Page
+      News Feed Page
     </div>
   )
 }
